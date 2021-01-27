@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>reverse and vowel</title>
+    </head>
+    <body>
+        <script>
+            var q=prompt("enter the query"),b=parseInt(q),rev=0,rem=0
+            if(q>0){
+                document.write("Entered query:"+q)
+                while(b>0){
+                    rem=b%10;
+                    b=parseInt(b/10);
+                    rev=rev*10+rem
+                }
+                document.write("<br>Reverese query:"+rev)
+            }
+            else{
+                q=q.search(/[aeiouAEIOU]/)
+                document.write("position of leftmost vowel=:"+(q+1))
+            }
+        </script>
+    </body>
+</html>

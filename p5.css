@@ -1,0 +1,14 @@
+*{
+    display:block;
+    font-size: 12pt;
+    margin-left: 20px;
+}
+name {
+    color:red;
+    font-size:15pt ;
+}
+usn{color:blue;}
+email{color:green;}
+college{color:yellow;}
+yoj{color:brown;}
+branch{color:orangered;}

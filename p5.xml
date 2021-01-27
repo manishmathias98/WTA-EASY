@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="p5.css"?>
+<studentdata>
+<student>
+<name>name:mohan</name>
+<usn>usn:1kn17cs057</usn>
+<college>college:knsit</college>
+<branch>branch:cse</branch>
+<yoj>year of joining:2017</yoj>
+<email>email:mohan@gmail.com</email>
+</student>
+<student>
+<name>name:joash</name>
+<usn>usn:1kn17cs038</usn>
+<college>college:knsit</college>
+<branch>branch:cse</branch>
+<yoj>year of joining:2017</yoj>
+<email>email:joash@gmail.com</email>
+</student>
+<student>
+<name>name:darshan</name>
+<usn>usn:1kn17cs026</usn>
+<college>college:knsit</college>
+<branch>branch:cse</branch>
+<yoj>year of joining:2017</yoj>
+<email>email:darshan@gmail.com</email>
+</student>
+</studentdata>

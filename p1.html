@@ -1,0 +1,72 @@
+<html>
+    <head><title>SIMPLE CALUCLATOR</title></head>
+    <style>
+        body{
+            position: center;
+        }
+        table,td,th,tr{
+            border: 1px solid black;
+            padding: 5px;
+            background-color: silver;
+            border-collapse:collapse;
+        }
+        table{
+            margin: auto;
+        }
+    </style>
+    <body>
+        <table>
+            <tr>
+                <th colspan="4">SIMPLE CALUCLATOR</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    VALUE 1:<input type="text" id="value1">
+                </td>
+                <td colspan="2">
+                    VALUE 2:<input type="text" id="value2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1"><button onclick="add()">add</button></td>
+                <td colspan="1"><button onclick="sub()">sub</button></td>
+                <td colspan="1"><button onclick="mul()">mul</button></td>
+                <td colspan="1"><button onclick="div()">div</button></td>
+            </tr>
+            <tr>
+                <td colspan="4">RESULT:<input type="text" id="value3"></td>
+            </tr>
+        </table>
+        <script>
+            function add()
+            {
+                val1=parseInt(document.getElementById('value1').value)
+                val2=parseInt(document.getElementById('value2').value)
+                document.getElementById('value3').value=(val1+val2)
+            }
+            function sub()
+            {
+                val1=parseInt(document.getElementById('value1').value)
+                val2=parseInt(document.getElementById('value2').value)
+                document.getElementById('value3').value=(val1-val2)
+            }
+            function mul()
+            {
+                val1=parseInt(document.getElementById('value1').value)
+                val2=parseInt(document.getElementById('value2').value)
+                document.getElementById('value3').value=(val1*val2)
+            }
+            function div()
+            {
+                val1=parseInt(document.getElementById('value1').value)
+                val2=parseInt(document.getElementById('value2').value)
+                if(val2!=0){
+                document.getElementById('value3').value=(val1/val2)
+                }
+                else{
+                    alert("divide by zero error")
+                }
+            }
+        </script>
+    </body>
+</html>

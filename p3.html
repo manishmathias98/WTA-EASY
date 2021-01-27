@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>TEXT GROW AND SHRINK</title>
+        <style>
+            #text {
+                position:fixed;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="text"></div>
+        <script>
+            var text1="TEXT GROWING",text2="TEXT SHRINKING",size=5,i=1;
+            function grow()
+            {
+                if(i==1)
+                {
+                    document.getElementById('text').innerHTML='<p style="font-size:'+size+';color:red;">'+text1+'</p>';
+                    size=size+5
+                    if(size==50){
+                        i=0
+                    }
+                }
+
+                else{
+                    document.getElementById('text').innerHTML='<p style="font-size:'+size+';color:blue;">'+text2+'</p>';
+                    size=size-5
+                    if(size==5){
+                        i=1
+                    }
+                }
+                c();
+            }
+            function c()
+            {
+                setTimeout(grow,300)
+            }
+            c()
+        </script>
+    </body>
+</html>
